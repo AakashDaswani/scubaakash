@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{store}} — Televisions, Appliances, Jewellery &amp; More</title>
+<meta name="description" content="Our showroom online: televisions, home appliances, jewellery, mattresses, fragrances and furniture. Browse, then come in and see it.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23141414'/><text y='68' x='50' text-anchor='middle' font-size='54' fill='%23f2ebe1' font-family='Georgia,serif'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ announcement strip ============ -->
+<div class="announce" data-site="announcement"></div>
+
+<!-- ============ header ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="header-left">
+      <button class="icon-btn nav-toggle" aria-label="Departments" aria-expanded="false">
+        <i data-icon="menu" data-icon-size="21"></i>
+      </button>
+      <button class="icon-btn search-toggle" aria-label="Search" aria-expanded="false">
+        <i data-icon="search" data-icon-size="21"></i><span>Search</span>
+      </button>
+    </div>
+    <a class="logo" href="index.html">
+      <span class="logo-name" data-site="name"></span>
+      <span class="logo-sub" data-site="tagline"></span>
+    </a>
+    <div class="header-right">
+      <a class="icon-btn" data-site-href="phone">
+        <i data-icon="phone" data-icon-size="19"></i><span data-site="phone"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="search-drawer">
+    <div class="wrap">
+      <form action="products.html" method="get">
+        <i data-icon="search" data-icon-size="19"></i>
+        <label class="sr-only" for="headerSearch">Search products</label>
+        <input id="headerSearch" type="search" name="q" placeholder="Search the showroom">
+        <button class="btn btn-sm" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- ============ department nav ============ -->
+<nav class="dept-nav">
+  <div class="wrap"><ul id="deptNav"></ul></div>
+</nav>
+
+<!-- ============ banner ============ -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="kicker">Seven departments · One showroom</span>
+      <h1 class="display">Everything for the home</h1>
+      <p>Televisions, appliances, jewellery, mattresses, fragrance and furniture — all on one floor, all in stock, all worth seeing in person.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="products.html">Browse the showroom</a>
+        <a class="btn" href="contact.html">Find the store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ service bar ============ -->
+<div class="service-bar">
+  <div class="wrap"><ul id="serviceBar"></ul></div>
+</div>
+
+<!-- ============ departments ============ -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">Seven sections on the floor</span>
+      <h2 class="display">Departments</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="category-grid" id="categoryGrid"></div>
+  </div>
+</section>
+
+<!-- ============ featured ============ -->
+<section class="block cream">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">In store now</span>
+      <h2 class="display">New arrivals</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="product-grid" id="featuredGrid"></div>
+    <div style="text-align:center;margin-top:52px">
+      <a class="btn" href="products.html">View all products</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ two editorial panels ============ -->
+<section class="split">
+  <div class="split-panel" data-panel-image="">
+    <div>
+      <span class="kicker">The counter</span>
+      <h3 class="display">Fragrance</h3>
+      <p>Designer colognes and perfumes, sealed and genuine. Come in and try before you decide.</p>
+      <a class="btn" href="products.html?category=fragrances">Browse fragrance</a>
+    </div>
+  </div>
+  <div class="split-panel dark" data-panel-image="">
+    <div>
+      <span class="kicker">The sleep shop</span>
+      <h3 class="display">Mattresses</h3>
+      <p>Single to king, firm to pillow-top. Lie on them properly — that is what the floor is for.</p>
+      <a class="btn btn-light" href="products.html?category=mattresses">Browse mattresses</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ reduced ============ -->
+<section class="block" id="dealsSection">
+  <div class="wrap">
+    <div class="head-row">
+      <h2 class="display">Reduced this week</h2>
+      <a class="link-more" href="products.html">All products</a>
+    </div>
+    <div class="product-grid" id="dealsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ closing band ============ -->
+<section class="band">
+  <div class="wrap-narrow">
+    <span class="kicker">No online checkout, by design</span>
+    <h2 class="display">Come and see it in person</h2>
+    <p>This site is our showroom window. The real thing is on the floor — call us, message us, or simply walk in.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" data-site-href="phone"><span data-site="phone"></span></a>
+      <a class="btn btn-light" href="contact.html">Hours &amp; directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ footer ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="logo" href="index.html">
+        <span class="logo-name" data-site="name"></span>
+        <span class="logo-sub" data-site="tagline"></span>
+      </a>
+      <p class="footer-about">A family-run showroom for the home — electronics, appliances, jewellery, bedding and fragrance, all in one place.</p>
+    </div>
+    <div>
+      <h4>Departments</h4>
+      <ul class="footer-links" id="footerCats"></ul>
+    </div>
+    <div>
+      <h4>Information</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">All products</a></li>
+        <li><a href="contact.html">Visit us</a></li>
+        <li><a href="contact.html#hours">Opening hours</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <ul class="footer-links">
+        <li data-site="address"></li>
+        <li><a data-site-href="phone"><span data-site="phone"></span></a></li>
+        <li><a data-site-href="email"><span data-site="email"></span></a></li>
+        <li><a data-site-href="maps" target="_blank" rel="noopener">Get directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span data-year></span> <span data-site="name"></span></span>
+    <span data-price-note></span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

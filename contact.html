@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit us — {{store}}</title>
+<meta name="description" content="Opening hours, phone number, address and directions to our showroom.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23141414'/><text y='68' x='50' text-anchor='middle' font-size='54' fill='%23f2ebe1' font-family='Georgia,serif'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="announce" data-site="announcement"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="header-left">
+      <button class="icon-btn nav-toggle" aria-label="Departments" aria-expanded="false">
+        <i data-icon="menu" data-icon-size="21"></i>
+      </button>
+      <button class="icon-btn search-toggle" aria-label="Search" aria-expanded="false">
+        <i data-icon="search" data-icon-size="21"></i><span>Search</span>
+      </button>
+    </div>
+    <a class="logo" href="index.html">
+      <span class="logo-name" data-site="name"></span>
+      <span class="logo-sub" data-site="tagline"></span>
+    </a>
+    <div class="header-right">
+      <a class="icon-btn" data-site-href="phone">
+        <i data-icon="phone" data-icon-size="19"></i><span data-site="phone"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="search-drawer">
+    <div class="wrap">
+      <form action="products.html" method="get">
+        <i data-icon="search" data-icon-size="19"></i>
+        <label class="sr-only" for="headerSearch">Search products</label>
+        <input id="headerSearch" type="search" name="q" placeholder="Search the showroom">
+        <button class="btn btn-sm" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<nav class="dept-nav">
+  <div class="wrap"><ul id="deptNav"></ul></div>
+</nav>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="kicker">Find us</span>
+    <h1 class="display" style="margin-top:18px">Visit the showroom</h1>
+    <p>We don't sell online — everything on this site is on the floor in the shop. Call ahead if you would like something put aside, and we will have it waiting.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap contact-grid">
+
+    <div>
+      <div class="info-block">
+        <h3>How to reach us</h3>
+        <ul class="info-list">
+          <li>
+            <i data-icon="pin" data-icon-size="19"></i>
+            <div>
+              <b>The shop</b>
+              <span data-site="address"></span><br>
+              <span data-site="addressLine2"></span>
+            </div>
+          </li>
+          <li>
+            <i data-icon="phone" data-icon-size="19"></i>
+            <div><b>Phone</b><a data-site-href="phone"><span data-site="phone"></span></a></div>
+          </li>
+          <li>
+            <i data-icon="chat" data-icon-size="19"></i>
+            <div><b>WhatsApp</b><a data-site-href="whatsapp" target="_blank" rel="noopener">Send us a message</a></div>
+          </li>
+          <li>
+            <i data-icon="mail" data-icon-size="19"></i>
+            <div><b>Email</b><a data-site-href="email"><span data-site="email"></span></a></div>
+          </li>
+        </ul>
+        <div class="enquire-actions" style="margin-top:28px">
+          <a class="btn btn-solid" data-site-href="phone">Call the store</a>
+          <a class="btn" data-site-href="maps" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+
+      <div class="info-block" id="hours">
+        <h3>Opening hours</h3>
+        <div id="hoursList"></div>
+        <p style="color:var(--ink-soft);font-size:13px;margin-top:18px">
+          Public holidays may differ — please call if you are travelling in.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="map-embed">
+        <div>
+          <i data-icon="pin" data-icon-size="30"></i>
+          <p>Open Google Maps, find the shop, choose <em>Share → Embed a map</em>, and paste the code it gives you in place of this box.</p>
+        </div>
+      </div>
+
+      <div class="info-block" style="margin-top:46px">
+        <h3>Before you come in</h3>
+        <ul class="info-list">
+          <li>
+            <i data-icon="label" data-icon-size="19"></i>
+            <div><b>Prices on request</b><span>Call or message us with the item you're interested in and we'll give you our current price.</span></div>
+          </li>
+          <li>
+            <i data-icon="clock" data-icon-size="19"></i>
+            <div><b>Stock moves fast</b><span>Popular items sell out. Ring ahead and we will hold it for you.</span></div>
+          </li>
+          <li>
+            <i data-icon="truck" data-icon-size="19"></i>
+            <div><b>Delivery</b><span>Available on large items — ask about your area and we will quote you.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="logo" href="index.html">
+        <span class="logo-name" data-site="name"></span>
+        <span class="logo-sub" data-site="tagline"></span>
+      </a>
+      <p class="footer-about">A family-run showroom for the home — electronics, appliances, jewellery, bedding and fragrance, all in one place.</p>
+    </div>
+    <div>
+      <h4>Departments</h4>
+      <ul class="footer-links" id="footerCats"></ul>
+    </div>
+    <div>
+      <h4>Information</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">All products</a></li>
+        <li><a href="contact.html">Visit us</a></li>
+        <li><a href="contact.html#hours">Opening hours</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Find us</h4>
+      <ul class="footer-links">
+        <li data-site="address"></li>
+        <li><a data-site-href="phone"><span data-site="phone"></span></a></li>
+        <li><a data-site-href="email"><span data-site="email"></span></a></li>
+        <li><a data-site-href="maps" target="_blank" rel="noopener">Get directions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span data-year></span> <span data-site="name"></span></span>
+    <span data-price-note></span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
